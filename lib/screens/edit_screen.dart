@@ -57,7 +57,7 @@ class _EditScreenState extends State<EditScreen> {
                 ),
                 child: TextField(
                   controller: _topicController,
-                  decoration: InputDecoration(hintText: 'Expense amount'),
+                  decoration: InputDecoration(hintText: 'price'),
                 ),
               ),
               SizedBox(height: 20,),
@@ -70,7 +70,7 @@ class _EditScreenState extends State<EditScreen> {
                 ),
                 child: TextField(
                   controller: _titleController,
-                  decoration: InputDecoration(hintText: 'Prise'),
+                  decoration: InputDecoration(hintText: 'title'),
                 ),
               ),
               SizedBox(height: 20,),

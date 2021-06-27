@@ -2,7 +2,7 @@ import 'package:cloud_firestore/cloud_firestore.dart';
 import 'package:flutter/foundation.dart';
 
 final FirebaseFirestore _firestore = FirebaseFirestore.instance;
-final CollectionReference _collectionReference = _firestore.collection("expanses");
+final CollectionReference _collectionReference = _firestore.collection("todo");
 
 class Database {
   static String? userID;
@@ -25,9 +25,9 @@ class Database {
 
   //read data
   static Stream<QuerySnapshot> readItems() {
-    CollectionReference expansesReference = _collectionReference.doc(userID).collection("items");
+    CollectionReference todoReference = _collectionReference.doc(userID).collection("items");
 
-    return expansesReference.snapshots();
+    return todoReference.snapshots();
 
   }
 
